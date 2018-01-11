@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.buwizz.buwizzdemo.MainActivity"
+	tools:layout_editor_absoluteY="81dp">
+
+	<Button
+		android:id="@+id/btn_connect"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:text="@string/connect"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		/>
+
+	<TextView
+		android:id="@+id/txt_speed"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="8dp"
+		android:layout_marginStart="8dp"
+		android:layout_marginTop="8dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/btn_connect"
+		tools:text="Speed: 0"/>
+
+	<Button
+		android:id="@+id/btn_speed_0"
+		android:layout_width="67dp"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="8dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="8dp"
+		android:text="0"
+		app:layout_constraintEnd_toStartOf="@+id/btn_speed_1"
+		app:layout_constraintHorizontal_chainStyle="spread"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/txt_speed"/>
+
+	<Button
+		android:id="@+id/btn_speed_1"
+		android:layout_width="67dp"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="8dp"
+		android:text="1"
+		app:layout_constraintEnd_toStartOf="@+id/btn_speed_2"
+		app:layout_constraintStart_toEndOf="@+id/btn_speed_0"
+		app:layout_constraintTop_toTopOf="@+id/btn_speed_0"
+		/>
+
+	<Button
+		android:id="@+id/btn_speed_2"
+		android:layout_width="67dp"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="8dp"
+		android:text="2"
+		app:layout_constraintEnd_toStartOf="@+id/btn_speed_3"
+		app:layout_constraintStart_toEndOf="@+id/btn_speed_1"
+		app:layout_constraintTop_toTopOf="@+id/btn_speed_0"
+		/>
+
+	<Button
+		android:id="@+id/btn_speed_3"
+		android:layout_width="67dp"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="8dp"
+		android:text="3"
+		app:layout_constraintEnd_toStartOf="@+id/btn_speed_4"
+		app:layout_constraintStart_toEndOf="@+id/btn_speed_2"
+		app:layout_constraintTop_toTopOf="@+id/btn_speed_2"
+		/>
+
+	<Button
+		android:id="@+id/btn_speed_4"
+		android:layout_width="68dp"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="16dp"
+		android:text="4"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@+id/btn_speed_3"
+		app:layout_constraintTop_toTopOf="@+id/btn_speed_3"
+		/>
+
+	<TextView
+		android:id="@+id/txt_channel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="8dp"
+		android:layout_marginStart="8dp"
+		android:layout_marginTop="8dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/btn_speed_0"
+		tools:text="Channel: 1"/>
+
+	<Button
+		android:id="@+id/btn_channel_1"
+		android:layout_width="67dp"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="8dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="8dp"
+		android:text="1"
+		app:layout_constraintEnd_toStartOf="@+id/btn_channel_2"
+		app:layout_constraintHorizontal_chainStyle="spread"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/txt_channel"/>
+
+	<Button
+		android:id="@+id/btn_channel_2"
+		android:layout_width="67dp"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="8dp"
+		android:text="2"
+		app:layout_constraintEnd_toStartOf="@+id/btn_channel_3"
+		app:layout_constraintStart_toEndOf="@+id/btn_channel_1"
+		app:layout_constraintTop_toTopOf="@+id/btn_channel_1"
+		/>
+
+	<Button
+		android:id="@+id/btn_channel_3"
+		android:layout_width="67dp"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="8dp"
+		android:text="3"
+		app:layout_constraintEnd_toStartOf="@+id/btn_channel_4"
+		app:layout_constraintStart_toEndOf="@+id/btn_channel_2"
+		app:layout_constraintTop_toTopOf="@+id/btn_channel_1"
+		/>
+
+	<Button
+		android:id="@+id/btn_channel_4"
+		android:layout_width="67dp"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="8dp"
+		android:text="4"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@+id/btn_channel_3"
+		app:layout_constraintTop_toTopOf="@+id/btn_channel_1"
+		/>
+
+	<com.buwizz.buwizzdemo.controls.DrivePad
+		android:id="@+id/drive_pad"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_marginBottom="32dp"
+		android:layout_marginEnd="32dp"
+		android:layout_marginStart="32dp"
+		android:layout_marginTop="32dp"
+		android:background="@android:color/darker_gray"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintDimensionRatio="1"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/btn_channel_1"/>
+
+</android.support.constraint.ConstraintLayout>
